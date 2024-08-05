@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script type="text/javascript" src="js/color-modes.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/arual" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ff6369e8c4.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/mail.js"></script>
+    <script src="js/navResponsive.js"></script>
+    <title>Aural Estudio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cheatsheet.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="navibar" id="header">
+    <a href="#home" onclick="openCard('home')"><h1><img class="logo" src="img/logo.png" alt="logo aural" id="logo">AURAL ESTUDIO</h1></a>
+    <a href="#estudioa" onclick="openCard('estudioa')"><h2>estudio a</h2></a>
+    <a href="#estudiob" onclick="openCard('estudiob')"><h2>estudio b</h2></a>
+    <a href="#backline" onclick="openCard('backline')"><h2>backline</h2></a>
+    <a href="#contacto" onclick="openCard('contacto')"><h2>contacto</h2></a>
+    <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="parallax">
+    <!-- HOME -->
+    <div class="section" id="home">
+      <div class="grid_container" >
+          <div class="column3"><h1>HOME</h1></div>
+          <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ipsa dolorem perferendis, inventore itaque harum veritatis esse molestiae officiis aperiam non minima totam architecto dicta rem voluptatem est ea cupiditate magni sapiente excepturi praesentium illo sit! Possimus labore suscipit porro, quis vel velit ad necessitatibus! Libero vitae laudantium aliquid. Est asperiores ducimus officiis vitae dolor vero esse. Placeat laboriosam adipisci unde quaerat accusantium obcaecati dolore ad. Id culpa nam fugit quia porro vel at laudantium ex eius dolore praesentium nihil veritatis sunt cupiditate iste facilis eligendi minus, sapiente modi, quos ea quidem iure! Natus culpa odit doloribus molestiae aliquam assumenda!</p></div>
+          <div class="column2-1"><img src="img/descanso.jpg" ></div>
+          <div><img src="img/ext1.jpg"></div>
+          <div><img src="img/ext2.jpg"></div>
+          <div><img src="img/ext3.jpg"></div>
+          <button class="column3" id="totop" onclick="topFunction()"><i class="fa-solid fa-chevron-up"></i></button>
+      </div>
+    </div>
+  
+    <!-- ESTUDIO A -->
+    <div class="section hiding" id="estudioa">
+      <div class="grid_container" >
+        <div class="column3"><h1>ESTUDIO A</h1></div>
+        <div class="column2"><img src="img/EstudioAplano.png"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nulla facere, qui unde vero eligendi culpa fuga sapiente nemo deserunt voluptas aliquam adipisci fugit reprehenderit rem quia. Est, aliquid fugit!</p>             
+        <!-- Miniaturas -->
+        <div class="column3">
+            <div class="roww">
+                <div class="columnn">
+                    <img src="img/auditorio.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="columnn">
+                    <img src="img/control1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="columnn">
+                    <img src="img/piano.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="columnn">
+                    <img src="img/auditorio.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+                <div class="columnn">
+                  <img src="img/auditorio.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+              </div>
+              <div class="columnn">
+                  <img src="img/control1.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+              </div>
+              <div class="columnn">
+                  <img src="img/piano.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+              </div>
+              <div class="columnn">
+                  <img src="img/auditorio.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+              </div>
+            </div>
+        </div>
+        <div class="column3"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat mollitia eius, laudantium id iure itaque eum, impedit nemo reiciendis excepturi. Magni quo aut quos minus necessitatibus! Est iste et itaque ex cum saepe at, rem dolorum esse repellat earum id! Natus non numquam suscipit expedita omnis sint cupiditate impedit iste autem illum explicabo, veniam officiis dignissimos vero laboriosam? Itaque blanditiis provident asperiores, ex dolores eum illum, tempora dolorem molestiae reiciendis possimus facilis iure incidunt pariatur voluptatum doloremque, soluta odio consectetur necessitatibus eos eligendi quasi eveniet tenetur. Quo, sunt adipisci cupiditate laborum deleniti, voluptatibus dolores, saepe minus aliquam quis sint.</p></div>
+        <!-- Modal/Lightbox -->
+        <div id="myModal" class="modall">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-contentt">
+        
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+              <img src="img/auditorio.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+              <img src="img/control1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img src="img/piano.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img src="img/auditorio.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img src="img/auditorio.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img src="img/control1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img src="img/piano.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img src="img/auditorio.jpg" style="width:100%">
+            </div>
+            
+            <!-- Next/previous -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        
+            <!-- CONTROL DE THUMBNAILS -->
+            <div class="roww">
+              <div class="columnn2">
+                <img class="demo" src="img/auditorio.jpg" onclick="currentSlide(1)" alt="Estudio A - Sala 1">
+              </div>
+          
+              <div class="columnn2">
+                <img class="demo" src="img/control1.jpg" onclick="currentSlide(2)" alt="Estudio A - Control Room">
+              </div>
+          
+              <div class="columnn2">
+                <img class="demo" src="img/piano.jpg" onclick="currentSlide(3)" alt="Estudio A - Sala 2">
+              </div>
+          
+              <div class="columnn2">
+                <img class="demo" src="img/auditorio.jpg" onclick="currentSlide(4)" alt="Placeholder para caption">
+              </div>
+
+              <div class="columnn2">
+                <img class="demo" src="img/auditorio.jpg" onclick="currentSlide(5)" alt="Estudio A - Sala 1">
+              </div>
+          
+              <div class="columnn2">
+                <img class="demo" src="img/control1.jpg" onclick="currentSlide(6)" alt="Estudio A - Control Room">
+              </div>
+          
+              <div class="columnn2">
+                <img class="demo" src="img/piano.jpg" onclick="currentSlide(7)" alt="Estudio A - Sala 2">
+              </div>
+          
+              <div class="columnn2">
+                <img class="demo" src="img/auditorio.jpg" onclick="currentSlide(8)" alt="Placeholder para caption">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="column3" id="totop" onclick="topFunction()"><i class="fa-solid fa-chevron-up"></i></button>
+      </div>
+    </div>
+    <!-- ESTUDIO B -->
+    <div class="section hiding" id="estudiob">
+      <div class="grid_container" >
+        <div class="column3"><h1>ESTUDIO B</h1></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deserunt blanditiis quis possimus dicta itaque obcaecati quo vero nesciunt temporibus amet voluptate quae soluta, numquam explicabo exercitationem id consectetur, omnis impedit fugiat animi quibusdam totam maiores dolore? Dolore soluta, ducimus nesciunt, et, illo accusamus expedita tenetur ipsum praesentium repellat iure sint ad? Eaque obcaecati, assumenda, natus excepturi enim ab molestias inventore repellat rem officiis quasi animi in sed deserunt magnam sapiente illum consequatur dolore. Quo adipisci, quaerat tempora rem culpa quam deleniti ullam! Quaerat, harum error similique ducimus molestias sit, quia facere, praesentium dicta fuga ut odit officiis reprehenderit in.</p>
+        <div class="column2-1"><img src="img/EstudioBplano.png"></div>
+        <!-- MINIATURAS -->
+        <div class="column3">
+            <div class="roww">
+                <div class="columnn">
+                    <img src="img/control3.jpg" onclick="openModalB();currentSlideB(1)" class="hover-shadow">
+                </div>
+                <div class="columnn">
+                    <img src="img/bateriadw.jpg" onclick="openModalB();currentSlideB(2)" class="hover-shadow">
+                </div>
+                <div class="columnn">
+                    <img src="img/salab.jpg" onclick="openModalB();currentSlideB(3)" class="hover-shadow">
+                </div>
+                <div class="columnn">
+                    <img src="img/auditorio.jpg" onclick="openModalB();currentSlideB(4)" class="hover-shadow">
+                </div>
+            </div>
+        </div>
+        <div class="column3"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat mollitia eius, laudantium id iure itaque eum, impedit nemo reiciendis excepturi. Magni quo aut quos minus necessitatibus! Est iste et itaque ex cum saepe at, rem dolorum esse repellat earum id! Natus non numquam suscipit expedita omnis sint cupiditate impedit iste autem illum explicabo, veniam officiis dignissimos vero laboriosam? Itaque blanditiis provident asperiores, ex dolores eum illum, tempora dolorem molestiae reiciendis possimus facilis iure incidunt pariatur voluptatum doloremque, soluta odio consectetur necessitatibus eos eligendi quasi eveniet tenetur. Quo, sunt adipisci cupiditate laborum deleniti, voluptatibus dolores, saepe minus aliquam quis sint.</p></div>
+        <!-- Modal/Lightbox -->
+        <div id="myModalB" class="modall">
+          <span class="close cursor" onclick="closeModalB()">&times;</span>
+          <div class="modal-contentt">
+        
+            <div class="mySlidesB">
+              <div class="numbertext">1 / 4</div>
+              <img src="img/control3.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlidesB">
+              <div class="numbertext">2 / 4</div>
+              <img src="img/bateriadw.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlidesB">
+              <div class="numbertext">3 / 4</div>
+              <img src="img/salab.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlidesB">
+              <div class="numbertext">4 / 4</div>
+              <img src="img/auditorio.jpg" style="width:100%">
+            </div>
+                      
+            <!-- Next/previous -->
+            <a class="prev" onclick="plusSlidesB(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesB(1)">&#10095;</a>
+        
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="captionB"></p>
+            </div>
+        
+            <!-- CONTROL DE THUMBNAILS -->
+            <div class="columnn">
+              <img class="demoB" src="img/control3.jpg" onclick="currentSlideB(1)" alt="Estudio B - Control Room">
+            </div>
+        
+            <div class="columnn">
+              <img class="demoB" src="img/bateriadw.jpg" onclick="currentSlideB(2)" alt="Placeholder para caption">
+            </div>
+        
+            <div class="columnn">
+              <img class="demoB" src="img/salab.jpg" onclick="currentSlideB(3)" alt="Estudio B - Sala de tomas">
+            </div>
+        
+            <div class="columnn">
+              <img class="demoB" src="img/auditorio.jpg" onclick="currentSlideB(4)" alt="Placeholder para caption">
+            </div>
+          </div>
+        </div>
+        <button class="column3" id="totop" onclick="topFunction()"><i class="fa-solid fa-chevron-up"></i></button>
+      </div>
+    </div>
+    <!-- BACKLINE -->
+    <div class="section hiding" id="backline">
+      <div class="grid_container" >
+        <div class="column3"><h1>BACKLINE</h1></div>
+        <div class="accordion column3" id="accordionExample">
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                MICRÓFONOS
+              </button>
+            </h4>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <!-- quitar desde aca-->
+                <div class="cards columnn">
+                  <img src="img/mics/u87.jpg" alt="Neumann U87 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>Neumann U87</h3>
+                    <p>Micrófono condenser multipatrón<br><br>Cantidad: 1</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/tlm193.jpg" alt="Neumann TLM 193 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>Neumann TLM 193</h3>
+                    <p>Micrófono condenser cardioide<br><br>Cantidad: 1</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/akgc414.jpg" alt="AKG C 414 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>AKG C414</h3>
+                    <p>Micrófono condenser multipatrón<br><br>Cantidad: 1</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/akgd112.jpg" alt="AKG D112 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>AKG D112</h3>
+                    <p>Micrófono dinámico cardioide<br><br>Cantidad: 1</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/akgd3500.jpg" alt="AKG D3500 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>AKG D3500</h3>
+                    <p>Micrófono dinámico cardioide<br><br>Cantidad: 1</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/shureb52.jpg" alt="Shure Beta 52 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>Shure Beta 52</h3>
+                    <p>Micrófono dinámico supercardioide<br><br>Cantidad: 1</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/shureb57.jpg" alt="Shure Beta 57 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>Shure Beta 57</h3>
+                    <p>Micrófono dinámico supercardioide<br><br>Cantidad: 3</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/shuresm57.jpg" alt="Shure SM 57 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>Shure SM 57</h3>
+                    <p>Micrófono dinámico cardioide<br><br>Cantidad: 3</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/shuresm81.jpg" alt="Shure SM 81 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>Shure SM 81</h3>
+                    <p>Micrófono condenser cardioide<br><br>Cantidad: 3</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/spc4.jpg" alt="Studio Project C4 MK2 x2 microphone" style="width: 100%;">
+                  <div class="cards-container">  
+                    <h3>SP C4 MKII</h3>
+                    <p>Micrófono condenser multipatrón<br><br>Cantidad: 2</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/spcs5.jpg" alt="Studio Project CS5 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>SP CS5</h3>
+                    <p>Micrófono condenser multipatrón<br><br>Cantidad: 1</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/splsd2.jpg" alt="Studio Project LSD2 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>SP LSD2 (estéreo)</h3>
+                    <p>Micrófono condenser multipatrón<br><br>Cantidad: 1</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/mxl604.jpg" alt="MXL 604 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>MXL 604</h3>
+                    <p>Micrófono condenser multipatrón<br><br>Cantidad: 1</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/mxlr44.jpg" alt="MXL R44 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>MXL R44</h3>
+                    <p>Micrófono ribbon bidireccional<br><br>Cantidad: 1</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/bc2.jpg" alt="Behringer C2 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>Behringer C2</h3>
+                    <p>Micrófono condenser cardioide<br><br>Cantidad: 2</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/becm8000.jpg" alt="Behringer ECM 8000 microphone" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>ECM 8000</h3>
+                    <p>Micrófono de medición lineal<br><br>Cantidad: 1</p>
+                    
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/dibox.jpg" alt="di box Rapco Whirlwind Behringer" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>Cajas directas</h3>
+                    <p>Activas y pasivas, varias marcas<br><br>Cantidad: 4</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/mics/micstand.jpg" alt="microphone stand" style="width: 100%;">
+                  <div class="cards-container">
+                    <h3>Pies de micrófonos</h3>
+                    <p>Jirafas: 18<br><br>Cortos: 6</p>
+                  </div>
+                </div>  
+                <!-- hasta aca-->
+                <!--<table id="bodyTableMicrofonons">
+                  <tbody>
+                  </tbody>
+                </table>-->
+                
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                BATERÍAS
+              </button>
+            </h4>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="cards columnn">
+                  <img src="img/inst/placeholder.jpg" alt="DW Collectors series drum kit" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>DW Collector`s series</b></h3>
+                    <p>Batería 5 cuerpos<br><br>Cantidad: 1</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/placeholder.jpg" alt="DW Pacific drum kit" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>DW Pacific</b></h3>
+                    <p>Batería 6 cuerpos<br><br>Cantidad: 1</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/placeholder.jpg" alt="Yamaha Rock and Road drum kit" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Yamaha Rock and Road</b></h3>
+                    <p>Batería 5 cuerpos<br><br>Cantidad: 1</p>  
+                  </div>
+                </div>            
+                <div class="cards columnn">
+                  <img src="img/inst/placeholder.jpg" alt="Platillos Zildjian Sabian Istambul" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Platillos</b></h3>
+                    <p>Zildjian, Sabian, Istambul<br><br>Cantidad: 1</p>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                AMPLIFICADORES
+              </button>
+            </h4>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="cards columnn">
+                  <img src="img/inst/placeholder.jpg" alt="SWR Studio 220 + Caja de 15 y 2x10 (Bajo)" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>SWR Studio 220</b></h3>
+                    <p>SWR Studio 220 + Caja de 15" y 2x10"<br><br>Equipo de bajo</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/voxac30.jpg" alt="VOX AC30 (Guitarra)" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>VOX AC30</b></h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, iusto.<br><br>Equipo de guitarra</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/fenderprojunior.jpg" alt="Fender Pro Junior (Guitarra)" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Fender Pro Junior</b></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolor!<br><br>Equipo de guitarra</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/marshall80.jpg" alt="Marshall Valvestate 80V (Guitarra)" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Marshall Valvestate 80V</b></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odit.<br><br>Equipo de guitarra</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/peavey112.jpg" alt="Peavey Bandit 112 (Guitarra)" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Peavey Bandit 112</b></h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.<br><br>Equipo de guitarra</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/placeholder.jpg" alt="Mesa Boogie (opcional)" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Mesa Boogie</b></h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, nostrum?<br><br>Equipo opcional</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/fendertwin.jpg" alt="Fender Twin Reverb (opcional)" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Fender Twin Reverb </b></h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, saepe.<br><br>Equipo opcional</p>  
+                  </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                INSTRUMENTOS (consultar)
+              </button>
+            </h4>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="cards columnn">
+                  <img src="img/inst/placeholder.jpg" alt="Piano 1/4 de Cola Chickering & Sons Boston USA" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Chickering & Sons</b></h3>
+                    <p>Piano 1/4 de Cola Chickering & Sons Boston USA<br><br>Origen: Boston, USA</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/placeholder.jpg" alt="Bajo Fender Jazz Bass Mexico" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Fender Jazz Bass</b></h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, iusto.<br><br>Origen: México</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/placeholder.jpg" alt="Guitarra Gibson ES 335 (Años 80)" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Gibson ES 335</b></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolor!<br><br>Origen: ? (`80s)</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/placeholder.jpg" alt="Guitarra Gibson ES 183" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Gibson ES 183</b></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odit.<br><br>Origen: ?</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/inst/placeholder.jpg" alt="Guitarra Fender Stratocaster USA" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Fender Stratocaster</b></h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.<br><br>Origen: USA</p>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                PREAMPLIFICADORES
+              </button>
+            </h4>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="cards columnn">
+                  <img src="img/hardware/uad4710d.png" alt="UAD 4-710D" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>UAD 4-710D</b></h3>
+                    <p>Lorem ipsum dolor sit amet.<br><br>Cantidad: 2 (8ch)</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/hardware/buccimp02.png" alt="6 Bucci (API clon)" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Bucci</b></h3>
+                    <p>Preams clon API<br><br>Cantidad: 6 (6ch)</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/hardware/petrungaro.png" alt="Petrungaro Class A preamp" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Petrungaro</b></h3>
+                    <p>Preamplificadores clase A<br><br>Cantidad: 1 (2ch)</p>  
+                  </div>
+                </div>            
+                <div class="cards columnn">
+                  <img src="img/hardware/summitpre.png" alt="Summit TPA-200B" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Summit TPA-200B</b></h3>
+                    <p>Preamp valvular<br><br>Cantidad: 1 (2ch)</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/hardware/placeholder.jpg" alt="Tascam M-3700" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Tascam M-3700</b></h3>
+                    <p>Consola<br><br>Cantidad: 1 (32ch)</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/hardware/placeholder.jpg" alt="Focusrite Octopre MK2" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Focusrite Octopre MK2</b></h3>
+                    <p>Lorem ipsum dolor sit amet.<br><br>Cantidad: 1 (8ch)</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/hardware/placeholder.jpg" alt="Audient iD44" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Audient iD44</b></h3>
+                    <p>Lorem ipsum dolor sit amet.<br><br>Cantidad: 1 (4ch)</p>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                PROCESOS
+              </button>
+            </h4>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="cards columnn">
+                  <img src="img/hardware/placeholder.jpg" alt="Manley Massive Passive" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Manley Massive Passive</b></h3>
+                    <p>Ecualizador pasivo<br><br>Cantidad: 1 (2ch)</p>
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/hardware/buccipasseq.png" alt="Bucci (Pultec clon)" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Bucci</b></h3>
+                    <p>Ecualizador pasivo clon PulTec<br><br>Cantidad: 1 (1ch)</p>  
+                  </div>
+                </div>
+                <div class="cards columnn">
+                  <img src="img/hardware/placeholder.jpg" alt="Bucci Bus Compressor (SSL clon)" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Bucci Bus Compressor</b></h3>
+                    <p>Compresor estilo SSL<br><br>Cantidad: 1 (2ch)</p>  
+                  </div>
+                </div>            
+                <div class="cards columnn">
+                  <img src="img/hardware/summitcomp.png" alt="Summit TLA-100A" style="width: 100%;">
+                  <div class="card-container">
+                    <h3><b>Summit TLA-100A</b></h3>
+                    <p>Compresor óptico<br><br>Cantidad: 1 (2ch)</p>  
+                  </div>
+                </div>         
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column3">
+          <a href="pdf/rider.pdf" target="_blank" class="column3"><h2>DESCARGAR LISTADO BACKLINE</h2></a>
+        </div>
+        <button class="column3" id="totop" onclick="topFunction()"><i class="fa-solid fa-chevron-up"></i></button>
+      </div>
+    </div>
+    <!-- CONTACTO -->
+    <div class="section hiding" id="contacto">
+      <div class="grid_container" >
+          <div class="column3"><h1>CONTACTO</h1></div>
+          <form action="https://formsubmit.co/carla.gatica@gmail.com" target="_self" method="post" autocomplete="on"> <!--modificar cuando tenga la recepcion-->
+              <div><label for="nombre">Nombre:</label></div>
+              <div><input  type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required></div>
+              <div><label for="email">E-mail:</label></div>
+              <div><input type="email" id="email" name="email" required></div>
+              <div><label for="mensaje">Mensaje:</label></div>
+              <div><textarea name="mensaje" rows="10" cols="30" required></textarea></div>
+              <input type="submit">
+          </form>
+        
+        <div class="column2-1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6893276835854!2d-58.462840217334204!3d-34.56142060327309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d49aaf98af%3A0x76ea10d74210ea04!2sMendoza%202446%2C%20C1428DKP%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1713817026010!5m2!1ses!2sar" width="100%" height="100%" style="border:0; margin-right: 1%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>        
+        <button class="column3" id="totop" onclick="topFunction()"><i class="fa-solid fa-chevron-up"></i></button>
+      </div>
+    </div>
+  </div>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="contenedor">
+        <h4 class="item"><a href="https://wa.me/5491112345678" target="_blank"><i class="fa-brands fa-whatsapp"></i> +54 911 1234-5678</h4></a>
+        <h4 class="item"><a href="#contacto"><i class="fa-solid fa-location-dot"></i> Mendoza 2446, CABA, Argentina</h4></a>
+        <h4 class="item"><a href="https://www.instagram.com/estudioaural" target="_blank"><i class="fa-brands fa-instagram"></i> estudioaural</h4></a>
+      </div>
+      <div class="contenedor">
+        <h5>Copyright © 2024 Carla Gatica</h5>
+      </div>
+    </div>
+    
+</body>
+<script type="text/javascript" src="js/galleryimages.js"></script>
+<script type="text/javascript" src="js/galleryimagesB.js"></script>
+<script type="text/javascript" src="js/shrinkheader.js"></script>
+<script type="text/javascript" src="js/collapsible.js"></script>
+<script type="text/javascript" src="js/animation-collapsible.js"></script>
+<script type="text/javascript" src="js/toTop.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+</html>
